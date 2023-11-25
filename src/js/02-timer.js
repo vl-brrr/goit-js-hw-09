@@ -46,6 +46,7 @@ values.forEach(value => {
   value.style.fontSize = '28px';
 });
 
+//
 const days = document.querySelector('span[data-days]');
 const hours = document.querySelector('span[data-hours]');
 const minutes = document.querySelector('span[data-minutes]');
