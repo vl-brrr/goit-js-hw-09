@@ -66,6 +66,9 @@ function handleTimer() {
       minutes.textContent = addLeadingZero(timeTill.minutes);
       seconds.textContent = addLeadingZero(timeTill.seconds);
       selectedDate--;
+      if (selectedDate - new Date() <= 999) {
+        clearInterval(timeId);
+      }
     }, 1000);
   }
 }
